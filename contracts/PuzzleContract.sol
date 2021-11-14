@@ -17,7 +17,7 @@ contract PuzzleContract is ERC1155, Ownable {
 
   constructor(uint16[4] memory _puzzlesPerTier)
     ERC1155(
-      "https://bafybeiela6wtg3ga7kn3aznqomjzvfbxi36hd2ral4gc3zga2o3kcipigu.ipfs.dweb.link/{id}.json"
+      "https://raw.githubusercontent.com/CastleNFT/castle-test-data/main/metadata/puzzles/{id}.json"
     )
   {
     puzzlesPerTier = _puzzlesPerTier;

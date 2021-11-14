@@ -23,7 +23,7 @@ contract PieceContract is ERC1155, Ownable {
     uint8 _columnCount
   )
     ERC1155(
-      "https://bafybeianv56sdv2ajdopcdvi5f6hrt65rww6oryg3olrmec5bwb6zlsdpi.ipfs.dweb.link/{id}.json"
+      "https://raw.githubusercontent.com/CastleNFT/castle-test-data/main/metadata/pieces/{id}.json"
     )
   {
     puzzlesPerTier = _puzzlesPerTier;
