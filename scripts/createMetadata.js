@@ -26,7 +26,7 @@ for (let t = 1; t <= tierCount; t++) {
   fs.writeFileSync(
     path.join(__dirname, `/metadata/puzzles/${t}.json`),
     JSON.stringify({
-      image: `https://raw.githubusercontent.com/CastleNFT/castle-test-data/main/metadata/puzzles/${t}.json`,
+      image: `https://raw.githubusercontent.com/CastleNFT/castle-test-data/99f79cd00aae1135063c28a10633f3b3efdd7002/images/puzzles/${t}.png`,
       title: `${tiers[t - 1]} Puzzle`,
       description: tierPuzzleDescriptions[t - 1],
     })
@@ -38,7 +38,7 @@ for (let t = 1; t <= tierCount; t++) {
       fs.writeFileSync(
         path.join(__dirname, `/metadata/pieces/${id}.json`),
         JSON.stringify({
-          image: `https://raw.githubusercontent.com/CastleNFT/castle-test-data/main/metadata/pieces/${id}.json`,
+          image: `https://raw.githubusercontent.com/CastleNFT/castle-test-data/99f79cd00aae1135063c28a10633f3b3efdd7002/images/pieces/${id}.png`,
           title: `${tiers[t - 1]} Piece`,
           description: tierPieceDescriptions[t - 1],
         })
