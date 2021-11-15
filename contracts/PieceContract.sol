@@ -31,6 +31,11 @@ contract PieceContract is ERC1155, Ownable {
     columnCount = _columnCount;
   }
 
+function contractURI() public view returns (string memory) {
+        return "https://raw.githubusercontent.com/CastleNFT/castle-test-data/main/metadata/oseametd.json";
+    }
+}
+
   /** @dev Enables minting.
    * @param enabled boolean indicating the minting state to be set
    * @return _mintingEnabled whether minting is enabled now
